@@ -1,398 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campfly - Book Your Dream Holiday | Fastest Growing Holiday Marketplace</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Top Banner -->
-    <div class="top-banner">
-        <div class="banner-content">
-            <span>Onam sale offer: 30% off on honeymoon packages</span>
-            <span>Onam sale offer: 30% off on honeymoon packages</span>
-            <span>Onam sale offer: 30% off on honeymoon packages</span>
-        </div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campfly Holidays</title>
+    <meta
+      name="description"
+      content="Campfly Holidays helps you plan memorable trips with curated destinations, smooth itineraries, and local experiences."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <span class="logo-go">go</span><span class="logo-campfly">campfly</span>
-                </div>
-                <div class="search-bar">
-                    <i class="fas fa-search"></i>
-                    <input type="text" placeholder="Search Destinations">
-                </div>
-                <div class="nav-links">
-                    <a href="#honeymoon">Honeymoon</a>
-                    <a href="#family">Family</a>
-                </div>
-                <div class="nav-actions">
-                    <div class="currency">
-                        <i class="fas fa-rupee-sign"></i> INR
-                    </div>
-                    <button class="signin-btn">Sign in</button>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <header class="site-header">
+      <div class="brand">Campfly Holidays</div>
+      <nav aria-label="Main navigation">
+        <a href="#destinations">Destinations</a>
+        <a href="#packages">Packages</a>
+        <a href="#process">How It Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-small" href="#contact">Plan My Trip</a>
+    </header>
 
-    <!-- Main Content -->
     <main>
-        <!-- Destination Categories -->
-        <section class="categories">
-            <div class="container">
-                <div class="category-scroll">
-                    <div class="category-item">
-                        <i class="fas fa-compass"></i>
-                        <span>Explore</span>
-                    </div>
-                    <div class="category-item">
-                        <i class="fas fa-landmark"></i>
-                        <span>Agra</span>
-                    </div>
-                    <div class="category-item">
-                        <i class="fas fa-mountain"></i>
-                        <span>Ladakh</span>
-                    </div>
-                    <div class="category-item">
-                        <i class="fas fa-building"></i>
-                        <span>Mumbai</span>
-                    </div>
-                    <div class="category-item">
-                        <i class="fas fa-mosque"></i>
-                        <span>Dubai</span>
-                    </div>
-                    <div class="category-item">
-                        <i class="fas fa-snowflake"></i>
-                        <span>Kashmir</span>
-                    </div>
-                    <div class="category-item">
-                        <i class="fas fa-umbrella-beach"></i>
-                        <span>Goa</span>
-                    </div>
-                    <div class="category-item">
-                        <i class="fas fa-water"></i>
-                        <span>Kerala</span>
-                    </div>
-                    <div class="category-item">
-                        <i class="fas fa-ship"></i>
-                        <span>Kochi</span>
-                    </div>
-                    <div class="category-item">
-                        <i class="fas fa-city"></i>
-                        <span>Trivandrum</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Trending Getaways Section -->
-        <section class="trending-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Trending Getaways</h2>
-                    <a href="#" class="view-all">View all <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="package-grid">
-                    <!-- Package Card 1 -->
-                    <div class="package-card">
-                        <div class="package-image">
-                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Ladakh">                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
-                        </div>
-                        <div class="package-info">
-                            <h3>Ladakh Adventure Expedition With Turtuk Village</h3>
-                            <div class="package-meta">
-                                <span class="duration">3 days & 4 nights</span>
-                                <span class="rating"><i class="fas fa-star"></i> 4.8 (120)</span>
-                            </div>
-                            <div class="package-tags">
-                                <span class="tag">Family Friendly</span>
-                            </div>
-                            <div class="package-footer">
-                                <div class="price">
-                                    <span class="label">INR</span>
-                                    <span class="amount">21,800</span>
-                                    <span class="per-person">per person</span>
-                                </div>
-                                <div class="actions">
-                                    <button class="whatsapp-btn"><i class="fab fa-whatsapp"></i></button>
-                                    <button class="book-btn">Book now</button>
-                                </div>
-
-                                                <!-- Package Card 2 -->
-                                                <div class="package-card">
-                    <div class="package-image">
-                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Goa Beach">
-                    </div>
-                    <div class="package-info">
-                        <h3>Goa Beach Paradise - Sun, Sand & Sea</h3>
-                        <div class="package-meta">
-                            <span class="duration">4 days & 3 nights</span>
-                            <span class="rating"><i class="fas fa-star"></i> 4.9 (215)</span>
-                        </div>
-                        <div class="package-tags">
-                            <span class="tag">Couple Friendly</span>
-                        </div>
-                        <div class="package-footer">
-                            <div class="price">
-                                <span class="label">INR</span>
-                                <span class="amount">15,999</span>
-                                <span class="per-person">per person</span>
-                            </div>
-                            <div class="actions">
-                                <button class="whatsapp-btn"><i class="fab fa-whatsapp"></i></button>
-                                <button class="book-btn">Book now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                                                <!-- Package Card 3 -->
-                <div class="package-card">
-                    <div class="package-image">
-                        <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800" alt="Kerala Backwaters">
-                    </div>
-                    <div class="package-info">
-                        <h3>Kerala Backwaters & Houseboat Experience</h3>
-                        <div class="package-meta">
-                            <span class="duration">5 days & 4 nights</span>
-                            <span class="rating"><i class="fas fa-star"></i> 4.7 (189)</span>
-                        </div>
-                        <div class="package-tags">
-                            <span class="tag">Family Friendly</span>
-                        </div>
-                        <div class="package-footer">
-                            <div class="price">
-                                <span class="label">INR</span>
-                                <span class="amount">18,500</span>
-                                <span class="per-person">per person</span>
-                            </div>
-                            <div class="actions">
-                                <button class="whatsapp-btn"><i class="fab fa-whatsapp"></i></button>
-                                <button class="book-btn">Book now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Travel Types Section -->
-        <section class="travel-types">
-            <div class="container">
-                <div class="type-grid">
-                    <div class="type-item">
-                        <div class="type-image">
-                            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2" alt="Couple">
-                        </div>
-                        <h3>Couple</h3>
-                    </div>
-                    <div class="type-item">
-                        <div class="type-image">
-                            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300" alt="Family">
-                        </div>
-                        <h3>Family</h3>
-                    </div>
-                    <div class="type-item">
-                        <div class="type-image">
-                            <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e" alt="Solo">
-                        </div>
-                        <h3>Solo</h3>
-                    </div>
-                    <div class="type-item">
-                        <div class="type-image">
-                            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac" alt="Friends">
-                        </div>
-                        <h3>Friends</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Book Now Pay Later Banner -->
-        <section class="bnpl-banner">
-            <div class="container">
-                <div class="banner-wrapper">
-                    <div class="banner-text">
-                        <h2>Book Now, Pay Later</h2>
-                        <p>Enjoy flexible travel planning with Campfly's 'Pay Later' option. Secure your booking now and pay when it's convenient, giving you freedom and peace of mind for your holiday plans.</p>
-                    </div>
-                    <div class="banner-illustration">
-                        <i class="fas fa-credit-card fa-5x"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Stats Section -->
-        <section class="stats-section">
-            <div class="container">
-                <div class="stats-header">
-                    <h2>Fastest Growing Holiday Marketplace</h2>
-                    <p>With a growing network and top-notch security, Campfly offers unmatched holiday options and safe, seamless booking for confident travel planning.</p>
-                </div>
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <i class="fas fa-user-check fa-2x"></i>
-                        <div class="stat-number">650+</div>
-                        <div class="stat-label">Verified Agents</div>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-smile fa-2x"></i>
-                        <div class="stat-number">22 Lac+</div>
-                        <div class="stat-label">Happy Travellers</div>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-map-marker-alt fa-2x"></i>
-                        <div class="stat-number">65+</div>
-                        <div class="stat-label">Destinations</div>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-shield-alt fa-2x"></i>
-                        <div class="stat-number">Stringent</div>
-                        <div class="stat-label">Quality Control</div>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-headset fa-2x"></i>
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">Support</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-
-                    <!-- Testimonials Section -->
-    <section class="testimonials-section">
-        <div class="container">
-            <h2>What Our Travellers Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="review-text">"Amazing experience! The Ladakh trip was perfectly organized and our guide was exceptional. Every detail was taken care of."</p>
-                    <div class="reviewer">
-                        <img src="https://i.pravatar.cc/100?img=12" alt="Reviewer">
-                        <div>
-                            <h4>Priya Sharma</h4>
-                            <span>Ladakh Adventure</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="review-text">"Best honeymoon ever! Goa beaches were pristine and the resort was luxurious. Thank you Campfly for making it special!"</p>
-                    <div class="reviewer">
-                        <img src="https://i.pravatar.cc/100?img=23" alt="Reviewer">
-                        <div>
-                            <h4>Rahul & Anjali</h4>
-                            <span>Goa Honeymoon Package</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p class="review-text">"Kerala backwaters experience was serene and beautiful. The houseboat stay was a highlight of our family vacation."</p>
-                    <div class="reviewer">
-                        <img src="https://i.pravatar.cc/100?img=45" alt="Reviewer">
-                        <div>
-                            <h4>Kumar Family</h4>
-                            <span>Kerala Backwaters</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <section class="hero reveal">
+        <p class="eyebrow">Tailor-Made Holiday Experiences</p>
+        <h1>
+          Escape the ordinary. <span>Travel beautifully.</span>
+        </h1>
+        <p class="hero-copy">
+          From mountain escapes to tropical breaks, we design smooth, stress-free trips for families, couples, and groups.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#packages">See Packages</a>
+          <a class="btn btn-secondary" href="#process">How We Plan</a>
         </div>
-    </section>
+      </section>
 
-                    <!-- How It Works Section -->
-    <section class="how-it-works-section">
-        <div class="container">
-            <h2>How It Works</h2>
-            <p class="section-subtitle">Book your dream holiday in 3 simple steps</p>
-            <div class="steps-grid">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <i class="fas fa-search fa-3x"></i>
-                    <h3>Browse & Choose</h3>
-                    <p>Explore our curated packages and select your perfect getaway</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <i class="fas fa-calendar-check fa-3x"></i>
-                    <h3>Book & Customize</h3>
-                    <p>Book instantly or customize your itinerary with our experts</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <i class="fas fa-plane-departure fa-3x"></i>
-                    <h3>Travel & Enjoy</h3>
-                    <p>Pack your bags and enjoy a hassle-free vacation</p>
-                </div>
-            </div>
+      <section id="destinations" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">Popular Picks</p>
+          <h2>Featured Destinations</h2>
         </div>
-    </section>
-
-                    <!-- Newsletter Section -->
-    <section class="newsletter-section">
-        <div class="container">
-            <div class="newsletter-content">
-                <div class="newsletter-text">
-                    <i class="fas fa-envelope-open-text fa-3x"></i>
-                    <h2>Subscribe to Our Newsletter</h2>
-                    <p>Get exclusive deals, travel tips, and destination guides delivered to your inbox</p>
-                </div>
-                <div class="newsletter-form">
-                    <form>
-                        <input type="email" placeholder="Enter your email address" required>
-                        <button type="submit" class="subscribe-btn">Subscribe</button>
-                    </form>
-                    <p class="privacy-note">We respect your privacy. Unsubscribe anytime.</p>
-                </div>
-            </div>
+        <div class="grid cards">
+          <article class="card">
+            <h3>Kerala Backwaters</h3>
+            <p>Houseboat stays, lush greenery, and slow scenic travel.</p>
+            <p class="meta">Best for: Couples and relaxed vacations</p>
+          </article>
+          <article class="card">
+            <h3>Goa Coastal Vibes</h3>
+            <p>Beach sunsets, local cafes, and vibrant nightlife.</p>
+            <p class="meta">Best for: Friends and weekend getaways</p>
+          </article>
+          <article class="card">
+            <h3>Himalayan Trails</h3>
+            <p>Guided treks, crisp air, and unforgettable mountain views.</p>
+            <p class="meta">Best for: Adventure seekers</p>
+          </article>
         </div>
-    </section>
-                <p>&copy; 2024 Campfly. All rights reserved. | Built from Figma UI Design</p>
-            </div>
-        </footer>
-    </main
-            <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+      </section>
 
-</body>
+      <section id="packages" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">Ready Plans</p>
+          <h2>Starter Packages</h2>
+        </div>
+        <div class="grid pricing">
+          <article class="price-card">
+            <h3>Weekend Refresh</h3>
+            <p class="price">$299</p>
+            <p>2 nights hotel + city transfer + breakfast.</p>
+          </article>
+          <article class="price-card highlight">
+            <p class="tag">Most Popular</p>
+            <h3>Classic Explorer</h3>
+            <p class="price">$699</p>
+            <p>5 nights stay + guided tour + airport pickup.</p>
+          </article>
+          <article class="price-card">
+            <h3>Luxury Escape</h3>
+            <p class="price">$1299</p>
+            <p>7 nights resort + premium transport + experiences.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="process" class="section process reveal">
+        <div class="section-head">
+          <p class="eyebrow">Simple Workflow</p>
+          <h2>How We Build Your Holiday</h2>
+        </div>
+        <ol>
+          <li><strong>Share your budget and dates.</strong> We map options around your priorities.</li>
+          <li><strong>Review your itinerary draft.</strong> You tweak it until it feels perfect.</li>
+          <li><strong>Travel stress-free.</strong> We stay available during your entire trip.</li>
+        </ol>
+      </section>
+
+      <section id="contact" class="section contact reveal">
+        <div class="section-head">
+          <p class="eyebrow">Let’s Plan</p>
+          <h2>Get a Free Trip Consultation</h2>
+        </div>
+        <form>
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required />
+
+          <label for="travel-date">Preferred travel month</label>
+          <input id="travel-date" type="month" />
+
+          <button type="submit" class="btn">Send Request</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Campfly Holidays. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
