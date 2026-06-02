@@ -8,6 +8,20 @@
       name="description"
       content="Plan your next trip with Campfly. Discover curated holiday packages, destinations, and flexible payment options."
     />
+    <link rel="canonical" href="https://campfly-landing-page.vercel.app/" />
+    <meta name="theme-color" content="#0da99b" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Campfly Holiday Packages" />
+    <meta
+      property="og:description"
+      content="Curated honeymoons, family escapes, and adventure routes with verified agents and local support."
+    />
+    <meta property="og:url" content="https://campfly-landing-page.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,7 +59,7 @@
         </label>
 
         <div class="header-actions">
-          <button class="ghost" type="button">INR</button>
+          <button class="ghost" data-currency-button type="button" aria-label="Prices are shown in Indian rupees">INR</button>
           <a class="solid action-link" href="#planner">Plan trip</a>
         </div>
       </div>
@@ -122,7 +136,7 @@
         <div class="container">
           <div class="section-head">
             <h2>Trending Getaways</h2>
-            <a href="#">View all</a>
+            <a href="#destinations">View all</a>
           </div>
 
           <div class="cards-3">
@@ -136,7 +150,15 @@
                 <p>4 nights • Adventure • Small group</p>
                 <div class="card-foot">
                   <span>INR <strong>21,800</strong> / person</span>
-                  <button class="solid" type="button">Book now</button>
+                  <button
+                    class="solid package-button"
+                    data-package="Ladakh Adventure Expedition with Turtuk"
+                    data-destination="Ladakh"
+                    data-style="Adventure"
+                    type="button"
+                  >
+                    Book now
+                  </button>
                 </div>
               </div>
             </article>
@@ -151,7 +173,15 @@
                 <p>3 nights • Couple friendly • Curated stays</p>
                 <div class="card-foot">
                   <span>INR <strong>17,499</strong> / person</span>
-                  <button class="solid" type="button">Book now</button>
+                  <button
+                    class="solid package-button"
+                    data-package="Goa Coastal Escape with Sunset Cruise"
+                    data-destination="Goa"
+                    data-style="Honeymoon"
+                    type="button"
+                  >
+                    Book now
+                  </button>
                 </div>
               </div>
             </article>
@@ -166,7 +196,15 @@
                 <p>5 nights • Family route • Flexible plans</p>
                 <div class="card-foot">
                   <span>INR <strong>18,900</strong> / person</span>
-                  <button class="solid" type="button">Book now</button>
+                  <button
+                    class="solid package-button"
+                    data-package="Kerala Backwater and Hillside Journey"
+                    data-destination="Kerala"
+                    data-style="Family"
+                    type="button"
+                  >
+                    Book now
+                  </button>
                 </div>
               </div>
             </article>
@@ -355,7 +393,7 @@
               Zero surprises and full flexibility.
             </p>
           </div>
-          <button class="ghost light" type="button">Learn more</button>
+          <a class="ghost light action-link" href="#planner">Learn more</a>
         </div>
       </section>
 
@@ -440,14 +478,14 @@
           <h4>Company</h4>
           <a href="#">Home</a>
           <a href="#">About us</a>
-          <a href="#">Contact</a>
+          <a href="mailto:hello@campfly.com">Contact</a>
         </section>
 
         <section>
           <h4>Support</h4>
-          <a href="#">Help centre</a>
-          <a href="#">FAQ</a>
-          <a href="#">Cancellation policy</a>
+          <a href="mailto:hello@campfly.com">Help centre</a>
+          <a href="#reviews">FAQ</a>
+          <a href="#planner">Cancellation policy</a>
         </section>
 
         <section>
@@ -456,8 +494,8 @@
             <input type="email" required placeholder="Email address" />
             <button class="solid" type="submit">Join</button>
           </form>
-          <p class="small">+91 98765 43321</p>
-          <p class="small">hello@campfly.com</p>
+          <p class="small"><a href="tel:+919876543321">+91 98765 43321</a></p>
+          <p class="small"><a href="mailto:hello@campfly.com">hello@campfly.com</a></p>
         </section>
       </div>
 
@@ -471,7 +509,13 @@
       </div>
     </footer>
 
-    <a class="wa-float" href="https://wa.me/919876543210" aria-label="WhatsApp contact">✆</a>
+    <a
+      class="wa-float"
+      href="https://wa.me/919876543210?text=Hi%20Campfly%2C%20I%20want%20help%20planning%20a%20holiday."
+      aria-label="WhatsApp contact"
+    >
+      ✆
+    </a>
 
     <script src="script.js"></script>
   </body>
