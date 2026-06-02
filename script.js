@@ -5,6 +5,11 @@ if (yearEl) {
 
 const searchInput = document.getElementById("site-search");
 const chips = Array.from(document.querySelectorAll(".chip"));
+const plannerForm = document.getElementById("planner");
+
+function openWhatsApp(message) {
+  window.location.href = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
+}
 
 if (searchInput && chips.length) {
   searchInput.addEventListener("input", () => {
@@ -18,6 +23,23 @@ if (searchInput && chips.length) {
     if (!query) {
       chips.forEach((chip, index) => chip.classList.toggle("active", index === 0));
     }
+  });
+
+  chips.forEach((chip) => {
+    chip.addEventListener("click", () => {
+      const destination = chip.textContent.trim();
+
+      if (searchInput) {
+        searchInput.value = destination === "Explore" ? "" : destination;
+        searchInput.dispatchEvent(new Event("input"));
+      }
+
+      if (plannerForm && destination !== "Explore") {
+        const destinationField = plannerForm.elements.destination;
+        destinationField.value = destination;
+        plannerForm.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    });
   });
 }
 
@@ -45,6 +67,29 @@ tabButtons.forEach((button) => {
   });
 });
 
+const currencyButton = document.querySelector("[data-currency-button]");
+if (currencyButton) {
+  currencyButton.addEventListener("click", () => {
+    alert("All package prices are currently shown in Indian rupees.");
+  });
+}
+
+const packageButtons = Array.from(document.querySelectorAll(".package-button"));
+packageButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const packageName = button.dataset.package || "this package";
+    const destination = button.dataset.destination || "";
+    const style = button.dataset.style || "holiday";
+
+    if (plannerForm) {
+      plannerForm.elements.destination.value = destination;
+      plannerForm.elements.style.value = style;
+    }
+
+    openWhatsApp(`Hi Campfly, I want details for ${packageName}.`);
+  });
+});
+
 const newsletterForm = document.getElementById("newsletter-form");
 if (newsletterForm) {
   newsletterForm.addEventListener("submit", (event) => {
@@ -54,7 +99,6 @@ if (newsletterForm) {
   });
 }
 
-const plannerForm = document.getElementById("planner");
 if (plannerForm) {
   plannerForm.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -65,6 +109,6 @@ if (plannerForm) {
     const style = formData.get("style") || "holiday";
     const message = `Hi Campfly, I want a ${style} itinerary for ${destination} around ${month}.`;
 
-    window.location.href = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
+    openWhatsApp(message);
   });
 }
